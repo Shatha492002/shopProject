@@ -98,6 +98,7 @@ input[type="number"] {
   appearance: textfield;
 }
 * {
+ 
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -159,10 +160,18 @@ a {
 }
 /*small*/
  
+ 
 
 @media (min-width: 768px) {
   .container {
     width: 670px;
+ 
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+ 
   }
 }
 /* medium */
@@ -340,7 +349,6 @@ header .container {
     display: flex;
     margin: 0 auto;
   }
-
   header .menu-toggle {
     font-size: 25px;
     cursor: pointer;
@@ -2847,7 +2855,7 @@ header  .nav li a.active ,
   color: var(--header-color);
   line-height: 1.5;
 }
-/* Media Queries */
+  /* Media Queries */ 
 @media (max-width: 1200px) {
   .about-details .section1 .text h2,
   .why .container .text h2 {
@@ -2968,6 +2976,8 @@ header  .nav li a.active ,
  
 }
 
+ 
+ 
  
 /* End section logo */
 /* --------------------------Start details of products-----------------
@@ -3855,6 +3865,7 @@ font-size: 15px;
   border-radius: 5px;
   margin-right: 10px;
 }
+ 
 @media (max-width: 768px) {
 .cart-dropdown .cart-item img {
   position: relative;
@@ -3862,6 +3873,7 @@ font-size: 15px;
 }
  
 }
+ 
 
 .cart-dropdown .cart-item-details ,
  .wishlist-dropdown .wishlist-item-details {
@@ -4055,6 +4067,7 @@ font-size: 18px;
     color: var(--little-par);
 
 }
+
 /* =========================================== */
 /* Contact Page Media Queries */
 @media (max-width: 1200px) {
@@ -4189,6 +4202,7 @@ font-size: 18px;
   }
 
 }
+ 
  
  
 /* ------------------------------------------------------------ */
