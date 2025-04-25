@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Render All Element Normally-->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Webfont library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Concert+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Awesome link -->
+    <script
+      src="https://kit.fontawesome.com/c1a12a9bed.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <a href="index.html"><img class="image" src="images/logo2.png" alt="logo" /></a>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars-staggered" id="open-btn"></i>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="sidebar" id="sidebar">
+          <div class="quick-navigation">
+            <p><i class="icon" id="close-btn">&times;</i> Quick Navigation</p>
+          </div>
+          <div class="search-container2">
+            <input type="text" class="searchBox" placeholder="Search..." />
+            <i class="bi bi-search" id="searchBtn1"></i>
+          </div>
+          <div class="tab-buttons">
+            <button id="mobile-menu-btn" class="tab active">Mobile Menu</button>
+            <button id="categories-btn" class="tab">Categories</button>
+          </div>
+          <ul class="menu" id="mobile-menu">
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li>
+              <a href="products.html"
+                >Shop <span class="toggle" data-target="options">+</span></a
+              >
+              <ul class="submenu" id="options">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Accessories
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Bracelets
+                    <span class="toggle" data-target="options1">+</span></a
+                  >
+                  <ul class="submenu" id="options1">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Women's</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Jacket</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Blouses</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Dresses</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Clothing
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i>Coats & Jackets
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Clothing
+                    <span class="toggle" data-target="options2">+</span></a
+                  >
+                  <ul class="submenu" id="options2">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Rings</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Shoes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Watches</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Handing</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Men's</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="view.html"
+                >Products
+                <span class="toggle" data-target="blog-options">+</span></a
+              >
+              <ul class="submenu" id="blog-options">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i>Carousel</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i>Category 01
+                    <span class="toggle" data-target="options3">+</span></a
+                  >
+                  <ul class="submenu" id="options3">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Sub Category
+                        01</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Sub Category
+                        01</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Category 02
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Category 03
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Parent Category
+                    |<span class="toggle" data-target="options4">+</span></a
+                  >
+                  <ul class="submenu" id="options4">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Child Category
+                        |
+                        <span class="toggle" data-target="options5">+</span></a
+                      >
+                      <ul class="submenu" id="options5">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-chevron-right icon"></i> Grandchild
+                            Category |</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Parent Category
+                    ||</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i> Parent Category
+                    |||<span class="toggle" data-target="options6">+</span>
+                  </a>
+                  <ul class="submenu" id="options6">
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-chevron-right icon"></i> Child Category
+                        |||</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chevron-right icon"></i>Un categorized
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#"
+                >My Account
+                <span class="toggle" data-target="account-options">+</span></a
+              >
+              <ul class="submenu" id="account-options">
+                <li>
+                  <a href="cart.html"
+                    ><i class="fas fa-chevron-right icon"></i> My Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="checkout.html"
+                    ><i class="fas fa-chevron-right icon"></i> My Checkout</a
+                  >
+                </li>
+                <li>
+                  <a href="wishlist.html"
+                    ><i class="fas fa-chevron-right icon"></i> My Wishlist</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >Social Link
+                <span class="toggle" data-target="options7">+</span></a
+              >
+              <ul class="submenu" id="options7">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Google+</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >Other Link
+                <span class="toggle" data-target="options8">+</span></a
+              >
+              <ul class="submenu" id="options8">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Support Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Refund Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Term of Use</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu" id="categories" style="display: none">
+            <li>
+              <a href="#"
+                >Bracelets<span class="toggle" data-target="options21"
+                  >+</span
+                ></a
+              >
+              <ul class="submenu" id="options21">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Women's</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Jacket</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Blouses</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Dresses</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Clothing</a>
+            </li>
+            <li>
+              <a href="#">Coat & Jackets</a>
+            </li>
+            <li>
+              <a href="#"
+                >Earring
+                <span class="toggle" data-target="options22">+</span></a
+              >
+              <ul class="submenu" id="options22">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Rings</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Shoes</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right icon"></i> Watches</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Handbag</a>
+            </li>
+            <li>
+              <a href="#">Men's</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="https://x.com/Shatha72401840?t=0D6VaDRh-zZ1hF4LdM5J3w&s=35"target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/161bfAfvt4/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzJd" target="_blank"> <i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <ul class="nav">
+          <li><a href="index.html"  class="active">Home</a></li>
+          <li><a href="view.html">Products</a></li>
+          <li class="dropdown">
+            <a href="products.html">Shop <i class="fas fa-chevron-down"></i></a>
+            <div class="mega-menu">
+              <ul class="column">
+                <h3>Shop Page</h3>
+                <li><a href="details.html">My details</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+                <li><a href="checkout.html">My Checkout</a></li>
+                <li><a href="wishlist.html">My Wishlist</a></li>
+                <li><a href="https://github.com/Shatha492002" target="_blank" >My Account in github</a></li>
+              </ul>
+              <ul class="column">
+                <h3>Product Types</h3>
+                <li><a href="details.html?id=Clot-W-003">Most used product</a></li>
+                <li><a href="details.html?id=Glass-M-007">More productive product</a></li>
+                <li><a href="details.html?id=Clot-M-037">More available product</a></li>
+                <li><a href="details.html?id=Clot-W-067">New product</a></li>
+                <li><a href="details.html?id=Acc-M-064">Most loved product</a></li>
+              </ul>
+              <div class="best-sellers">
+                <h3>Best Sellers</h3>
+                <div class="product">
+                  <a href="details.html?id=Sho-W-002">
+                    <img src="images/shoes10.png" alt="Plain brown shoes" />
+                    </a>
+                  <div class="info">
+                    <p>Plain brown shoes</p>
+                    <div class="stars">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$75.00</div>
+                  </div>
+                </div>
+                <div class="product">
+                  <a href="details.html?id=Sho-M-016">
+                    <img src="images/shoes5.png" alt="comfortable shoes" />
+                   </a>
+                  <div class="info">
+                    <p>comfortable shoes</p>
+                    <div class="stars">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                    </div>
+                    <div class="price">$80.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+          <a href="login.html"><i class="bi bi-person" id="profile-icon"></i></a>
+          <i id="wishlist-icon" class="bi bi-heart" onclick="addToWishlist(event)">
+            <span class="badge">0</span>
+            <div class="wishlist-dropdown">
+              <div class="wishlist-items-container" id="wishlist-items-container">
+                  <p id="empty-wishlist-message">No product in the Wishlist</p>
+              </div>
+              <div class="wishlist-subtotal">Subtotal: <span id="wishlist-subtotal">$0.00</span></div>
+              <div class="wishlist-buttons">
+                  <a href="wishlist.html"><button class="view-wishlist">View Wishlist</button></a>
+                  <a href="cart.html"><button class="view-cart">Go To Cart</button></a>
+              </div>
+          </div>
+          </i>  
+          <i id="cart-icon" class="bi bi-cart3" onclick="toggleCart()">
+            <span class="badge">0</span>
+            <div class="cart-dropdown">
+              <div class="cart-items-container" id="cart-items-container">
+                    <p id="empty-cart-message">No product in the cart</p>
+                </div>
+                <div class="cart-subtotal">Subtotal: <span id="cart-subtotal">$0.00</span></div>
+                <div class="cart-buttons">
+                    <a href="cart.html"><button class="view-cart">View Cart</button></a>
+                    <a href="checkout.html"><button class="checkout">Checkout</button></a>
+                </div>
+            </div>
+        </i>
+          <i class="bi bi-search" id="searchBtn"></i>
+          <div class="search-container">
+            <div class="boxSearch" id="searchBox">
+              <input type="text" placeholder="Type your search..." />
+              <select>
+                <option value="Category">Select Category</option>
+                <option value="Bracelets">Bracelets</option>
+                <option value="clothing">clothing</option>
+                <option value="Coats & Jackets">Coats & Jackets</option>
+                <option value=" HandBag">HandBag</option>
+              </select>
+              <button id="closeBtn" class="closeBtn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <a href="https://x.com/Shatha72401840?t=0D6VaDRh-zZ1hF4LdM5J3w&s=35" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/share/161bfAfvt4/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzJd" target="_blank"> <i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+ 
+    <button id="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="scroll"></div>
+    <div class="landing" id="landing">
+      <div class="overlay2"></div>
+      <div class="container">
+        <h5>handbag new collection</h5>
+        <h3>New arrivals!</h3>
+        <h1>amazing Anywhere</h1>
+        <p>
+          Enjoy a wide range of high-quality products that suit all tastes and
+          keep up with the latest fashion trends. Here, you will find everything
+          you are looking for and more!
+        </p>
+        <a href="products.html"><button>Shop Now</button></a>
+      </div>
+    </div>
+ 
+    <!-- Start Who we are -->
+    <div class="about" id="about" data-aos="fade-up"  data-aos-duration="2000">
+      <div class="container">
+        <div class="spacial-content">
+          <p>Who We Are</p>
+          <h1>
+            Welcome To AnyWhere <span></span><span></span><span></span
+            ><span></span>
+          </h1>
+          <div class="content">
+            <p>
+              Welcome to our website! We are here to provide you with an
+              exceptional shopping experience that includes everything you need
+              to complete your look with elegance. From luxury clothing for men
+              and women to distinctive accessories, amazing bags, and various
+              shoes, we have everything you need to add a unique touch to your
+              look.
+            </p>
+            <span>Shatha & Haya - </span><span>CEO AnyWhere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Who we are -->
+    <!-- start view product -->
+    <div class="view" id="product" data-aos="fade-up" data-aos-duration="2000">
+      <div class="spacial-content">
+        <h1 id="font">Our various departments</h1>
+        <p>
+          In our store, you will find a wide range of clothing,
+          accessories,shoes and bags for men and women, carefully selected to
+          meet the needs of everyone.
+        </p>
+      </div>
+      <div class="container grid">
+        <div class="image">
+          <a href="products.html?category=Clothing">
+          <img src="images/view1.png" alt="" />
+          <button class="button">Clothings</button>
+           </a>
+        </div>
+        <div class="image">
+          <a href="products.html?category=Shoes">
+          <img src="images/view2.png" alt="" />
+          <button class="button">Shoes</button>
+          </a>
+        </div>
+        <div class="image">
+          <a href="products.html?category=Glasses">
+          <img src="images/view3.png" alt="" />
+          <button class="button">Sun Glasses</button>
+          </a>
+        </div>
+        <div class="image">
+          <a href="products.html?category=Accessories">
+          <img src="images/view6.png" alt="" />
+          <button class="button">Accessories</button>
+          </a>
+        </div>
+        <div class="image">
+          <a href="products.html?category=MakeUp">
+          <img src="images/view5.png" alt="" />
+          <button class="button">MakeUp</button>
+          </a>
+        </div>
+        <div class="image">
+          <a href="products.html?category=HandBag">
+          <img src="images/view4.png" alt="" />
+          <button class="button">HandBag</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end view product -->
+    <!-- Start Categories -->
+
+    <div class="categories" id="category"  data-aos="fade-up"  data-aos-duration="2000">
+      <div class="spacial-content">
+        <h1 id="font">Explore our collections</h1>
+        <p>
+          A unique shopping experience that includes the best options for
+          fashion and accessories for all tastes.
+        </p>
+      </div>
+      <h2 class="category-title">For Women's</h2>
+      <div class="container grid" id="product-container">
+        <div class="image">
+        <a href="details.html?id=Acc-W-001">
+          <img src="images/Accessories1.jpg" alt="Accessories1" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Accessories">Accessories</a>
+            <h2>Elegant bracelet</h2>
+            <span>$30.00</span>
+          </div>
+          
+        <div class="event"  data-product-id="Acc-W-001">
+          <a onclick="addProductToCart(event)">
+            <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+        </a>
+        
+        <a onclick="addProductToWishlist(event)"data-product-id="Acc-W-001">
+            <i class="fas fa-heart" data-text="WatchList"></i>
+        </a>
+        </div>
+        
+
+        </div>
+    
+        <div class="image">
+          <a href="details.html?id=Sho-W-002">
+          <img src="images/shoes10.png" alt="shoes10" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Shoes">Shoes</a>
+            <h2>Plain brown shoes</h2>
+            <span>$75.00</span>
+          </div>
+          <div class="event"  data-product-id="Sho-W-002">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Sho-W-002">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          <div class="discount">-20%</div>
+
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-W-003">
+          <img src="images/clothing16.png" alt="clothing16" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Clothing" >Clothing</a>
+            <h2>Two-tone dress</h2>
+            <span>$130.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-W-003">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-W-003">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Hand-W-004"> 
+          <img src="images/handbag3.png" alt="handbag3" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=HandBag">HandBag</a>
+            <h2>Light brown women's bag</h2>
+            <span>$60.00</span>
+          </div>
+          <div class="event"  data-product-id="Hand-W-004">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Hand-W-004">
+              <i class="fas fa-heart" data-text="WatchList" ></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-M-005">
+          <img src="images/clothing12.png" alt="clothing12" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Men's beige pants</h2>
+            <span>$70.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-M-005">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)"  data-product-id="Clot-M-005">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Sho-M-006">
+          <img src="images/shoes2.png" alt="shoes2" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Shoes">Shoes</a>
+            <h2>Blue and brown shoes</h2>
+            <span>$90.00</span>
+          </div>
+          <div class="event"  data-product-id="Sho-M-006">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Sho-M-006">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Glass-M-007">
+          <img src="images/glasses1.png" alt="glasses1" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Glasses">Glasses</a>
+            <h2>Men's glasses</h2>
+            <span>$30.00</span>
+          </div>
+          <div class="event"  data-product-id="Glass-M-007">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Glass-M-007">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-M-008">
+          <img src="images/clothing11.png" alt="clothing11" />
+        </a>
+          <div class="content">
+            <a href="products.html?category=Clothing"  >Clothing</a>
+            <h2>Distinctive shirt</h2>
+            <span>$50.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-M-008">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-M-008">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          <div class="discount">10%</div>
+        </div>
+      </div>
+      <h2 class="category-title2">For Men's</h2>
+    </div>
+    <!-- <div class="pagination-container">
+      <button id="prev-btn" onclick="prevPage()">Prev</button>
+      <div id="pagination-numbers"></div>
+      <button id="next-btn" onclick="nextPage()">Next</button>
+    </div> -->   
+    <div class="see">
+    <a href="products.html"><button >See more </button></a>
+  </div>
+    <!-- End Categories -->
+    <!-- Start designer -->
+    <div class="designer"  data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <h4>
+          <i class="fas fa-quote-left"></i>
+          This website has been carefully designed to provide a unique and easy
+          shopping experience for users. Using modern user interface development
+          techniques, the focus has been on providing a simple and responsive
+          design that allows the user to navigate smoothly between sections and
+          products.
+          <i class="fas fa-quote-right"></i>
+        </h4>
+        <div class="design">
+          <img src="images/designer1.jpg" alt="ShathaDoghmosh" />
+          <div class="content">
+            <h2>Shatha doghmosh</h2>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End designer -->
+    <!-- Start latest arrivals -->
+    <div class="latest"  data-aos="fade-up" data-aos-duration="2000">
+      <div class="spacial-content">
+        <h1 id="font">Latest product</h1>
+        <p>
+          Enjoy our latest products carefully selected to meet your daily needs.
+          Find out what suits you now!
+        </p>
+      </div>
+      <div class="container">
+        <div class="image">
+          <a href="details.html?id=Clot-W-049
+          "><img src="images/clothing30.png" alt="clothing30" /></a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Distinctive modern dress</h2>
+            <span>100$</span>
+          </div>
+          <div class="event"  data-product-id="Clot-W-049">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)"data-product-id="Clot-W-049">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Acc-W-076"
+            ><img src="images/Accessories18.png" alt="Accessories18"
+          /></a>
+          <div class="content">
+            <a href="products.html?category=Accessories">Accessories</a>
+            <h2>Bracelet with a distinctive blue stone</h2>
+            <span>$50</span>
+          </div>
+          <div class="event"  data-product-id="Acc-W-076">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Acc-W-076">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          <div class="discount">-10%</div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-M-079"><img src="images/clothing40.png" alt="clothing40" /> </a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Men's full-length orange new story</h2>
+            <span>$160.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-M-079">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-M-079">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Acc-M-030"
+            ><img src="images/Accessories22.png" alt="Accessories22"
+          /></a>
+          <div class="content">
+            <a href="products.html?category=Accessories">Accessories</a>
+            <h2>Latest look watch</h2>
+            <span>$90.00</span>
+          </div>
+          <div class="event"  data-product-id="Acc-M-030">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Acc-M-030">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          <div class="discount">-20%</div>
+        </div>
+      </div>
+    </div>
+    <!-- End latest arrivals -->
+    <!-- Start New arrivals -->
+    <div class="new-arrivals" data-aos="fade-up" data-aos-duration="2000">
+      <div class="spacial-content">
+        <h1 id="font">New arrivals</h1>
+        <p>
+          We offer you a new range of products that are characterized by high
+          quality and comfort.
+        </p>
+      </div>
+      <div class="container">
+        <div class="image">
+          <a href="details.html?id=Clot-W-091"> 
+            <img src="images/clothing2.png" alt="clothing2" /></a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Comfortable and beautiful blouse</h2>
+            <span>$60.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-W-091">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-W-091">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-M-070">
+            <img src="images/clothing9.jpg" alt="clothing9" /></a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Full formal suit excellent material</h2>
+            <span>150$</span>
+          </div>
+          <div class="event"  data-product-id="Clot-M-070">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-M-070">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+          <div class="discount">-30%</div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-M-054"> 
+            <img src="images/clothing38.png" alt="clothing38" /></a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Grey sports tracksuit, excellent quality</h2>
+            <span>$150.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-M-054">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)"data-product-id="Clot-M-054">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+        <div class="image">
+          <a href="details.html?id=Clot-W-066"> 
+            <img src="images/clothing13.jpg" alt="clothing13" />
+          </a>
+          <div class="content">
+            <a href="products.html?category=Clothing">Clothing</a>
+            <h2>Modern design skirt</h2>
+            <span>$60.00</span>
+          </div>
+          <div class="event"  data-product-id="Clot-W-066">
+            <a onclick="addProductToCart(event)">
+              <i class="fas fa-cart-plus" data-text="Add To Cart"></i>
+          </a>
+          
+          <a onclick="addProductToWishlist(event)" data-product-id="Clot-W-066">
+              <i class="fas fa-heart" data-text="WatchList"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End New arrivals -->
+    <!-- Start available -->
+    <div class="available" data-aos="fade-up" data-aos-duration="2000">
+      <div class="spacial-content">
+        <h1 id="font">Our Services</h1>
+      </div>
+      <div class="container">
+        <div class="details">
+          <i class="fa fa-truck"></i>
+          <i class="fa fa-shipping-fast"></i>
+          <h2>Free Shipping Worldwide</h2>
+          <p>
+            Enjoy fast and reliable delivery, wherever you are. We ensure your
+            orders reach you safely, without any extra charges
+          </p>
+        </div>
+        <div class="details">
+          <i class="fa fa-sync-alt"></i>
+          <i class="fa fa-piggy-bank"></i>
+          <h2>Money Back Guarantee</h2>
+          <p>
+            Your satisfaction is our priority. If you're not happy with your
+            purchase, return it within 30 days for a full refund
+          </p>
+        </div>
+        <div class="details">
+          <i class="fa fa-phone-volume"></i>
+          <i class="fa fa-comment-dots"></i>
+          <h2>online support 24/7</h2>
+          <p>
+            Get assistance anytime, anywhere. Our team is available round the
+            clock to help you with any questions or concerns
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End available -->
+    <!-- Start Footer -->
+    <div class="footer" id="footer"data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="column">
+          <h3>Contact Info</h3>
+          <div class="content">
+            <i class="fa fa-map-marker-alt"></i>
+            <div class="details">
+              <h4>Address:</h4>
+              <p>palestine - gaza - alzaytoon</p>
+            </div>
+          </div>
+          <div class="content">
+            <i class="fa fa-phone"></i>
+            <div class="details">
+              <h4>Phone:</h4>
+              <p>+970595204795</p>
+            </div>
+          </div>
+          <div class="content">
+            <i class="fa fa-envelope-open"></i>
+            <div class="details">
+              <h4>Email:</h4>
+              <p>
+                <a href="mailto:shathadogh872@gmail.com"
+                  >shathadogh872@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <i class="fa fa-link"></i>
+            <div class="details">
+              <h4>Website:</h4>
+              <p><a href="http://127.0.0.1:5501/index.html" target="_blank">http://127.0.0.1:5501/index.html</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h3 id="info">Information</h3>
+          <ul class="information">
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="https://github.com/Shatha492002" target="_blank"> My Account</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="wishlist.html" target="_blank"> My Wishlist</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="products.html" target="_blank"> Shopping</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right" target="_blank"></i><a href="about.html"> About Us</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i
+              ><a href="cart.html" target="_blank"> My Cart</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="checkout.html" target="_blank"> My Checkout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 id="info">Follow Us</h3>
+          <ul class="follow">
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i> 
+              <a href="https://www.facebook.com/share/161bfAfvt4/" target="_blank"> Facebook</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"> Google+</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i><a href="https://www.youtube.com/@shatham.d.7816" target="_blank"> YouTube</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="https://x.com/Shatha72401840?t=0D6VaDRh-zZ1hF4LdM5J3w&s=35"target="_blank" > Twitter</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="https://www.instagram.com/sh_m_d49?igsh=MTVhZTN4eHE5YTk2aw==" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <i class="fa fa-chevron-right"></i>
+              <i class="fa fa-chevron-right"></i>
+              <a href="https://www.pinterest.com/shathadogh872/" target="_blank">Pinterest</a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>
+            Be the first to know about the latest updates & exclusive promotions
+            from us . No spam, we guarantee!
+          </p>
+          <form action="#" class="email">
+            <input type="email" placeholder="Email address" required />
+            <button type="submit">
+              <img src="images/telegram.png" alt="telegram" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Footer -->
+    <div class="copyright">
+      <div class="container">
+        <div class="details">
+          <h5>
+            <strong>&copy;</strong> Copyright 2025 <a href="index.html">AnyWhere</a> -
+            All Rights Reserved - Powered by WooVina Theme.
+          </h5>
+        </div>
+        <div class="details">
+          <h5>
+            <a href="#">Privacy & Cookies</a> | <a href="#">FAQs</a> |
+            <a href="#">Accessibility</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- ...................................................
+    .........................popup......................
+    ................................................... -->
+   <div class="popup hide-popup">
+    <div class="popup-content">
+      <button id="closeBtn" class="closeBtn close-popup">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="popup-left">
+        <div class="popup-img-container">
+          <img class="popup-img" src="images/shop2.png" alt="">
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="right-content">
+          <h1>Get Discount <span>50%</span>off </h1>
+          <p>Sign up to our newsletter and save 30% for your next purchase. No spam, We promise  </p>
+          <form action="">
+            <input type="email" placeholder="Enter Your Email...." class="popup-form">
+            <a href="">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+   </div>
+ 
+  
+  <script src="js/loading.js"></script>
+  
+  <script src="js/main.js" defer></script>
+
+  <script src="js/details.js" defer></script>
+  
+ 
+
+
+ 
+  </body>
+</html>
